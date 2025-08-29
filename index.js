@@ -74,9 +74,9 @@ const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 
 app.get("/", (req, res) => {
-  res.send("✅ Server is running. Use POST /bfhl to test the API.");
+  res.send("Server is running. Use POST /bfhl to test the API.");
 });
 
 app.get("/bfhl", (req, res) => {
-  res.send("⚠️ Please use POST method for /bfhl with a JSON body.");
+  res.send("Please use POST method for /bfhl with a JSON body.");
 });
